@@ -46,7 +46,8 @@ p {
     text-decoration: none;
     background-image: linear-gradient(to right, #ffa500, #fd6e3a);
     padding: 12px 35px;
-    /* margin-top: 40px; */
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     border-radius: 40px;
     box-shadow: 3px 5px 12px -5px red;
 }
@@ -89,20 +90,25 @@ Caption-area
     background-image: url(../image/background/caption_background.jpg);
     background-repeat: no-repeat; 
     background-size: 100% 100%;
+    margin-top: 5%;
 }
 
 .caption-text-area{
     padding: 5%;
     
 } 
-
+.caption-text-area a{
+    margin-top: 20%;
+}
 .caption-image-area{
     padding: 5%;
     text-align: center;
+    
 } 
 
 .caption-image-area img{
     width: 100%;
+    margin-top: 5%;
 }
 /* =========================================
 About me
@@ -161,12 +167,18 @@ Recipe area
     }
 
     .recipe-card{
+        
         width: 24%;
         text-align: center;
         box-shadow: -10px 10px 50px #b8b8b8;
         margin: 1%;
         border-radius: 19px;
         padding: 2.1%
+        
+    }
+    .recipe-card a{
+        text-decoration: none;
+        color: #000;
     }
 
     .recipe-card img {
@@ -215,11 +227,12 @@ Recipe area
     .offer-card{
         display: flex;
         flex-direction: row;
-        box-shadow: 15px 20px 100px darkkhaki;
+        box-shadow: 15px 20px 100px #b5b063;
         padding: 10%;
         margin: 5%;
+        margin-bottom: 10%;
         border-radius: 30px;
-
+        
     }
     .offer-text-card{
         text-align: center;
@@ -230,18 +243,48 @@ Recipe area
         font-size: 30px;
     } 
     .offer-image-card{
-        text-align: center;
+        text-align: justify;
     }
+    .offer-text-card small{
+        color: #8d8d8d;
+    }
+
     .offer-image-card img{
         width: 100%;
         border-radius: 15px;
+    }
+    .offer-span{
+        font-size: 15px;
+        text-decoration: bold;
+        color: darkmagenta;
     }
 
     #offer_1 img{
         margin: 10%;
         
     }
+   
 
     #offer_2 img{
-        margin-right: 10%;
+        margin-right: 15%;
+        margin-top: 15%;
+    }
+    /* =============================
+    Footer
+    =============================== */
+    .footer-area{
+        display: block;
+        width: 100%;
+        height: 150px;
+        background-image: url(../image/background/footer_background.png);
+        text-align: center;
+    }
+    .footer-area h3{
+        margin: 0;
+        padding-top: 4%;
+        color: rgb(108, 107, 223);
+        font-size: 28px;
+    }
+    .footer-area h5{
+        color: #3700ff;
     }
